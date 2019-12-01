@@ -6,12 +6,12 @@ mysqli_set_charset($conn, 'utf8');
 $response=null;
 $records = null;
 extract($_POST);
-if (isset($_POST['unitId']) ) {
-    $sql = "DELETE FROM unit_master WHERE unitId = $unitId";
+if (isset($_POST['productId']) ) {
+    $sql = "DELETE FROM product_master WHERE productId = $productId";
 				$query = mysqli_query($conn,$sql);
 					if($query==1)
 					{
-					  			$response = array('Message'=>"Delete Product Category successfully",'Responsecode'=>200);
+					  			$response = array('Message'=>"Delete Product successfully",'Responsecode'=>200);
 					}
 					else
 					{

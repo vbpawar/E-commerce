@@ -7,7 +7,7 @@ $response=null;
 $records = null;
 extract($_POST);
 if (isset($_POST['taxId']) ) {
-    $sql = "DELETE FROM taxmaster WHERE TaxId = $taxId"
+    $sql = "DELETE FROM taxmaster WHERE TaxId = $taxId";
 				$query = mysqli_query($conn,$sql);
 					if($query==1)
 					{

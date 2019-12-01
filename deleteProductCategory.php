@@ -7,7 +7,7 @@ $response=null;
 $records = null;
 extract($_POST);
 if (isset($_POST['categoryId']) ) {
-    $sql = "DELETE FROM category_master WHERE categoryId = $categoryId"
+    $sql = "DELETE FROM category_master WHERE categoryId = $categoryId";
 				$query = mysqli_query($conn,$sql);
 					if($query==1)
 					{

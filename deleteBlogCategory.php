@@ -6,8 +6,8 @@ mysqli_set_charset($conn, 'utf8');
 $response=null;
 $records = null;
 extract($_POST);
-if (isset($_POST['unitId']) ) {
-    $sql = "DELETE FROM unit_master WHERE unitId = $unitId";
+if (isset($_POST['categoryId']) ) {
+    $sql = "DELETE FROM blogcategory WHERE categoryId = $categoryId";
 				$query = mysqli_query($conn,$sql);
 					if($query==1)
 					{
